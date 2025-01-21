@@ -1,0 +1,142 @@
+@media screen and  (max-width: 576px) {
+    #brekpoint{
+        background-color: #7700ff;
+       h1{
+        width: 300px;
+        height: 50px;
+        margin: auto;
+        &::after{
+            content: "mobile";
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            color: white;
+        }
+       }
+    }
+      header{
+        border-bottom: 2px solid var(--Oreange-color);
+        box-shadow: -10px 5px 20px 10px rgba(0, 0, 0, .25);
+    }
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        padding-top: 4rem;
+        right: -100%;
+        z-index: 100;
+        background-color: #d7d7d7;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin-top: 30px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .open-menu , .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .show-hide{
+        display: block;
+    }
+    .show-hide2{
+        display: none;
+    }
+}
+
+
+/* Small: 576–767 pixels for tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    #brekpoint {
+      background-color: rgb(0, 140, 255); /* Example styling for small tablets */
+      h1{
+        width: 300px;
+        height: 50px;
+        margin: auto;
+        &::after{
+            content: "tablet";
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            color: white;
+        }
+       }
+    }
+  
+    
+  }
+  
+  /* Medium: 768–991 pixels for tablets and small laptops */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #brekpoint {
+      background-color: rgb(226, 90, 111); /* Example styling for medium screens */
+      h1{
+        width: 300px;
+        height: 50px;
+        margin: auto;
+        &::after{
+            content: "laptop";
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            color: white;
+        }
+       }
+    }
+  
+
+  }
+  
+  /* Large: 992–1199 pixels for desktops and large laptops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #brekpoint {
+      background-color: rgb(5, 228, 5); /* Example styling for large screens */
+      h1{
+        width: 300px;
+        height: 50px;
+        margin: auto;
+        &::after{
+            content: "desktop";
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            color: white;
+        }
+       }
+    }
+  
+
+  }
+  
+  /* Extra Large: 1200 pixels and above for extra large screens */
+  @media (min-width: 1200px) {
+    #brekpoint {
+      background-color: rgb(0, 102, 255); /* Example styling for extra large screens */
+      h1{
+        width: 300px;
+        height: 50px;
+        margin: auto;
+        &::after{
+            content: "extra large";
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            color: white;
+        }
+       }
+    }
+  
+  }

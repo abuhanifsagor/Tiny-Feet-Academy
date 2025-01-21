@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* INFO: font family
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+body,html {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: var(--body-color);
+}
+
+/*INFO: color palette */
+:root {
+    --body-color: #f9f9f9;
+    --white-color: #fff;
+    --black-color: #111111;
+    --Oreange-color: #FEA301;
+    --skyBlue-color: #01ACFD;
+    --nav1-color: #05d4df;
+    --nav2-color: #5D58EF;
+    --hover-color: #fe8801;
+    --limeGreen-color: #95B226;
+    --transtion: all 0.3s ease;
+    --main-font: 'Quicksand', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+}
+
+/* INFO: Global styles */
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+}
+section{
+    padding: 5rem 1rem;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* INFO: navbar */
+
+header{
+    width: 100%;
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.096)
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: transparent;
+    padding: 12px 25px;
+}
+.logo img {
+    width: 40px;
+}
+.logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    a>h3{
+        color: var(--black-color);
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    padding-left: 30px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-color);
+    transition: var(--transtion);
+}
+.menu li:nth-child(1) a {
+    color: var(--Oreange-color);
+}
+.menu li:nth-child(1) a::after {
+    background-color: var(--Oreange-color);
+}
+.menu li:nth-child(2) a {
+    color: var(--skyBlue-color);
+}
+.menu li:nth-child(2) a::after {
+    background-color: var(--skyBlue-color);
+}
+.menu li:nth-child(3) a {
+    color: var(--nav1-color);
+}
+.menu li:nth-child(3) a::after {
+    background-color: var(--nav1-color);
+}
+.menu li:nth-child(4) a {
+    color: var(--nav2-color);
+}
+.menu li:nth-child(4) a::after {
+    background-color: var(--nav2-color);
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {
+    width: 100%;
+}
+.open-menu , .close-menu {
+    position: absolute;
+    color: red;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+.show-hide {
+    display: none;
+}
+
+.show-hide2 button,
+.show-hide button {
+    padding: 0.5rem 1.3rem;
+    background-color: var(--Oreange-color);
+    border: none;
+    border-radius: 5px;
+    transition: var(--transtion);
+    color: var(--white-color);
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    &:active,&:hover{
+        background-color: var(--hover-color);
+    }
+}
+
+
+
+
+
+
+
+
+
+#brekpoint{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
