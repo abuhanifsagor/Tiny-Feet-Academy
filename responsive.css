@@ -45,6 +45,16 @@
     #check:checked ~ .menu {
         right: 0;
     }
+    #check:checked ~ .overlay {
+        background: rgba(0, 0, 0, 0.63);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        transition: all 0.2s ease-in-out;
+    }
     .show-hide{
         display: block;
     }
@@ -88,6 +98,20 @@
           font-size: .9rem;
       }
   }
+  .tittle{
+    font-size: 1.4rem;
+  }
+    .curriculum_container{
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .curriculum_container:hover .currItems{
+      transform: scale(1);
+  }
+  .curriculum_container:hover .currItems:hover{
+      transform: scale(1.1);
+  }
+ 
 }
 
 
@@ -112,7 +136,7 @@
     
     /*INFO:HERO SECTION */
     .hero{
-      padding: 60px 0;
+      padding: 60px auto;
     }
     .hero_container{
         flex-direction: column;
@@ -126,11 +150,7 @@
       order: 1;
       width: 320px;
       height: 400px;
-      background: url(assets/herobg.png);
-      background-size: contain;
-      background-position: center  bottom;
-      background-repeat: no-repeat;
-      overflow: hidden;
+     
       img{
           bottom: -20px;
           margin-left: 90px;
@@ -146,7 +166,7 @@
           font-size: .9rem;
       }
   }
-  }
+}
   
   /* Medium: 768–991 pixels for tablets and small laptops */
   @media (min-width: 768px) and (max-width: 991px) {
@@ -167,6 +187,36 @@
        }
     }
   
+     /*INFO:HERO SECTION */
+     .hero{
+      padding: 60px auto;
+    }
+    .hero_container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;      
+    }
+
+    .hero-image{
+      order: 2;
+      width: 320px;
+      height: 400px;
+      img{
+          bottom: -20px;
+          margin-left: 90px;
+      }
+      
+  }
+    .hero-content{
+      order: 1;
+      h1{
+          font-size: 2rem;
+      }
+      p{  
+          font-size: .9rem;
+      }
+  }
 
   }
   
@@ -188,7 +238,9 @@
         }
        }
     }
-  
+    .hero-content{
+      width: 600px;
+    }
 
   }
   
@@ -210,5 +262,20 @@
         }
        }
     }
+
+    .hero-content{
+      width: 700px;
+    }
   
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1055px) {
+
+    .curriculum_container{
+      justify-content: center;
+    }
+    .curriculum_container:hover .currItems{
+      transform: translateY(0px);
+    }
+
   }
