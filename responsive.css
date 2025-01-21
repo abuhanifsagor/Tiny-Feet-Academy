@@ -1,20 +1,5 @@
 @media screen and  (max-width: 576px) {
-    #brekpoint{
-        background-color: #7700ff;
-       h1{
-        width: 300px;
-        height: 50px;
-        margin: auto;
-        &::after{
-            content: "mobile";
-            display: block;
-            width: 100px;
-            height: 100px;
-            margin: auto;
-            color: white;
-        }
-       }
-    }
+
       header{
         border-bottom: 2px solid var(--Oreange-color);
         box-shadow: 0px -5px  20px rgba(0, 0, 0, .25);
@@ -157,22 +142,7 @@
 
 /* Small: 576–767 pixels for tablets */
 @media (min-width: 576px) and (max-width: 767px) {
-    #brekpoint {
-      background-color: rgb(0, 140, 255); /* Example styling for small tablets */
-      h1{
-        width: 300px;
-        height: 50px;
-        margin: auto;
-        &::after{
-            content: "tablet";
-            display: block;
-            width: 100px;
-            height: 100px;
-            margin: auto;
-            color: white;
-        }
-       }
-    }
+
     
     /*INFO:HERO SECTION */
     .hero{
@@ -289,22 +259,7 @@
   
   /* Large: 992–1199 pixels for desktops and large laptops */
   @media (min-width: 992px) and (max-width: 1199px) {
-    #brekpoint {
-      background-color: rgb(5, 228, 5); /* Example styling for large screens */
-      h1{
-        width: 300px;
-        height: 50px;
-        margin: auto;
-        &::after{
-            content: "desktop";
-            display: block;
-            width: 100px;
-            height: 100px;
-            margin: auto;
-            color: white;
-        }
-       }
-    }
+
     .hero-content{
       width: 600px;
     }
@@ -313,22 +268,6 @@
   
   /* Extra Large: 1200 pixels and above for extra large screens */
   @media (min-width: 1200px) {
-    #brekpoint {
-      background-color: rgb(0, 102, 255); /* Example styling for extra large screens */
-      h1{
-        width: 300px;
-        height: 50px;
-        margin: auto;
-        &::after{
-            content: "extra large";
-            display: block;
-            width: 100px;
-            height: 100px;
-            margin: auto;
-            color: white;
-        }
-       }
-    }
 
     .hero-content{
       width: 700px;
