@@ -210,22 +210,7 @@
   
   /* Medium: 768–991 pixels for tablets and small laptops */
   @media (min-width: 768px) and (max-width: 991px) {
-    #brekpoint {
-      background-color: rgb(226, 90, 111); /* Example styling for medium screens */
-      h1{
-        width: 300px;
-        height: 50px;
-        margin: auto;
-        &::after{
-            content: "laptop";
-            display: block;
-            width: 100px;
-            height: 100px;
-            margin: auto;
-            color: white;
-        }
-       }
-    }
+   
   
      /*INFO:HERO SECTION */
      .hero{
