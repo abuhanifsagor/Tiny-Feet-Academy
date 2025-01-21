@@ -111,8 +111,40 @@
   .curriculum_container:hover .currItems:hover{
       transform: scale(1.1);
   }
- 
+  .stories_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; 
+  }
+.card1{
+    display: none;
 }
+
+.card2,
+.card3,
+.card4,
+.card5 {
+    grid-area: auto; 
+
+}
+.card{
+  .card_date{
+    width: 80px;
+    font-size: .6rem;
+    padding: .5rem 0;
+    top: -15px;
+  }
+}
+.card_content{
+  h3{
+    font-size: .7rem;
+    margin: .8rem 0;
+  }
+}
+
+
+
+}
+
 
 
 /* Small: 576–767 pixels for tablets */
@@ -166,7 +198,25 @@
           font-size: .9rem;
       }
   }
+    .stories_container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto; 
+    }
+  .card1{
+      display: none;
+  }
+
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+      grid-area: auto; 
+
+  }
+
+
 }
+
   
   /* Medium: 768–991 pixels for tablets and small laptops */
   @media (min-width: 768px) and (max-width: 991px) {
