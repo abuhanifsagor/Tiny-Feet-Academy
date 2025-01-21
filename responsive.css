@@ -140,8 +140,16 @@
     margin: .8rem 0;
   }
 }
-
-
+.logoSide{
+  max-width: 100%;
+}
+.social,
+.quick_link{
+  width: 100%;
+}
+  .footer_container{
+    flex-direction: column;
+  }
 
 }
 
@@ -213,7 +221,16 @@
       grid-area: auto; 
 
   }
-
+  .logoSide{
+    max-width: 100%;
+  }
+  .social,
+  .quick_link{
+    width: 100%;
+  }
+    .footer_container{
+      flex-direction: column;
+    }
 
 }
 
