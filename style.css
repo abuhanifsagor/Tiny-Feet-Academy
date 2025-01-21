@@ -30,7 +30,7 @@ body,html {
     --nav2-color: #5D58EF;
     --hover-color: #fe8801;
     --limeGreen-color: #95B226;
-    --transtion: all 0.3s ease;
+    --transtion: all 0.3s ease-in-out;
     --main-font: 'Quicksand', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
 }
@@ -72,7 +72,7 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.096)
+    box-shadow: 0px -5px  10px rgba(0, 0, 0, .25);
 }
 .nav-bar {
     width: 100%;
@@ -192,6 +192,76 @@ header{
 
 
 
+/* INFO: HERO SECTION START */
+
+.hero_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+.hero-content{
+    max-width: 700px;
+    width: 400px;
+    h1{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    p{  
+        font-size: 1rem;
+        margin: 1.3rem 0;
+        font-weight: 500;
+        line-height: 1.5rem;
+        color: rgba(0, 0, 0, .71);
+    }
+    button{
+        padding: 0.65rem 1.4rem;
+        border-radius: 7px;
+        border: none;background-color: var(--black-color);
+        color: var(--body-color);
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: var(--transtion);
+        &:hover{
+            background-color: var(--Oreange-color);
+        }
+    }
+}
+.hero-image{
+    position: relative;
+    width: 450px;
+    height: 575px;
+    background: url(assets/herobg.png);
+    background-size: contain;
+    background-position: center  bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    img{
+        position: absolute;
+        bottom: -20px;
+        margin-left: 100px;
+    }
+    
+}
+.hero-image img{
+    animation: fly 2s ease-in-out infinite alternate;
+}
+@keyframes fly {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+
+
+
+
+/* INFO: HERO SECTION END */
 
 
 
